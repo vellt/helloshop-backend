@@ -159,7 +159,7 @@ app.post("/api/messages",upload.none(), async (req, res) => {
 
 // REVIEWS
 app.get("/api/reviews",async (req, res) => {
-    const [rows] = await db.query("SELECT * FROM reviews ORDER BY review_id DESC");
+    const [rows] = await db.query("SELECT * FROM reviews ORDER BY  review_id DESC");
     res.json(rows);
 });
 
